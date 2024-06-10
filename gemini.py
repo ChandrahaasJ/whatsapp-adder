@@ -1,6 +1,6 @@
 import google.generativeai as genai
 def askgem(question):
-                apikey="AIzaSyAra-xAvVrX5VGZN0h95ZBYy2jJWZ6Mfok"
+                apikey="Upload your api key"
                 genai.configure(api_key=apikey)
                 model = genai.GenerativeModel('gemini-pro')
 
