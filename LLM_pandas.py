@@ -2,7 +2,7 @@ import time
 from gemini import askgem
 import pandas as pd
 res_list=[]
-df=pd.read_csv("C://Users/niran/Desktop/IMP Docs/RITI _ CLUB RECRUITMENTS - 2024  (Responses) - Form responses 1.csv")
+df=pd.read_csv("upload your responses file here")
 for i in range(len(df)+1):
     prompt=df["What's your understanding of upcycling and trends?"][1] + "rate this response for the question \"What's your understanding of upcycling and trends?\" out of 10" + "just give the rating(example: 10 or 3 or 2.8) with no additional text and fractions"+"give the score in decimals since I'll be filtering the responses later based on the score which you gave"
     res=askgem(prompt)
